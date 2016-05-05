@@ -2,8 +2,8 @@
 
 namespace GetOlympus\Field;
 
-use GetOlympus\Hera\Controllers\Field;
-use GetOlympus\Hera\Controllers\Translate;
+use GetOlympus\Hera\Field\Controller\Field;
+use GetOlympus\Hera\Translate\Controller\Translate;
 
 /**
  * Builds Include field.
@@ -46,7 +46,7 @@ class Include extends Field
     {
         // Build defaults
         $defaults = [
-            'title' => Translate::t('include.title'),
+            'title' => Translate::t('include.title', [], 'includefield'),
             'file' => false,
         ];
 
