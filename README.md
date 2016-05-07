@@ -1,4 +1,4 @@
-# Include Field ![For Olympus](https://img.shields.io/badge/for-Olympus-44cc11.svg?style=flat-square) ![For WordPress](https://img.shields.io/badge/for-WordPress-00aadc.svg?style=flat-square)
+# File Field ![For Olympus](https://img.shields.io/badge/for-Olympus-44cc11.svg?style=flat-square) ![For WordPress](https://img.shields.io/badge/for-WordPress-00aadc.svg?style=flat-square)
 
 _This component is a part of the [**Olympus Hera**](https://github.com/crewstyle/OlympusHera) **WordPress** library._  
 
@@ -6,8 +6,8 @@ _This component is a part of the [**Olympus Hera**](https://github.com/crewstyle
 
 ### Resources
 
-  + [Documentation](https://olympus.readme.io/v1.0/docs/include-field)
-  + [Report issues](https://github.com/GetOlympus/olympus-include-field/issues)
+  + [Documentation](https://olympus.readme.io/v1.0/docs/file-field)
+  + [Report issues](https://github.com/GetOlympus/olympus-file-field/issues)
   + [Olympus Hera](https://github.com/crewstyle/OlympusHera)
 
 ---
@@ -20,7 +20,7 @@ _This component is a part of the [**Olympus Hera**](https://github.com/crewstyle
 + http://twitter.com/crewstyle
 + http://github.com/crewstyle
 
-Please, read [LICENSE](https://github.com/GetOlympus/olympus-include-field/blob/master/LICENSE "LICENSE") for more details.  
+Please, read [LICENSE](https://github.com/GetOlympus/olympus-file-field/blob/master/LICENSE "LICENSE") for more details.  
 [![MIT](https://img.shields.io/badge/license-MIT_License-blue.svg?style=flat-square)](http://opensource.org/licenses/MIT "MIT")  
 
 ---
