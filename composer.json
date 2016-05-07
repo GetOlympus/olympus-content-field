@@ -1,9 +1,9 @@
 {
-  "name": "getolympus/olympus-include-field",
+  "name": "getolympus/olympus-file-field",
   "type": "olympus-field",
-  "description": "[READ-ONLY] Include field, this component is a part of the Olympus Hera WordPress library.",
-  "keywords": ["olympus", "hera", "field", "include", "framework", "php"],
-  "homepage": "https://github.com/GetOlympus/olympus-include-field",
+  "description": "[READ-ONLY] File field, this component is a part of the Olympus Hera WordPress library.",
+  "keywords": ["olympus", "hera", "field", "file", "framework", "php"],
+  "homepage": "https://github.com/GetOlympus/olympus-file-field",
   "license": "MIT",
   "authors": [
     {
@@ -13,7 +13,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "GetOlympus\\Field\\": "src/Include/"
+      "GetOlympus\\Field\\": "src/File/"
     }
   },
   "extra": {

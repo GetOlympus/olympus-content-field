@@ -6,10 +6,10 @@ use GetOlympus\Hera\Field\Controller\Field;
 use GetOlympus\Hera\Translate\Controller\Translate;
 
 /**
- * Builds Include field.
+ * Builds File field.
  *
  * @package Field
- * @subpackage Include
+ * @subpackage File
  * @author Achraf Chouk <achrafchouk@gmail.com>
  * @since 0.0.1
  *
@@ -17,7 +17,7 @@ use GetOlympus\Hera\Translate\Controller\Translate;
  *
  */
 
-class Include extends Field
+class File extends Field
 {
     /**
      * @var string
@@ -32,7 +32,7 @@ class Include extends Field
     /**
      * @var string
      */
-    protected $template = 'include.html.twig';
+    protected $template = 'file.html.twig';
 
     /**
      * Prepare HTML component.
@@ -46,7 +46,7 @@ class Include extends Field
     {
         // Build defaults
         $defaults = [
-            'title' => Translate::t('include.title', [], 'includefield'),
+            'title' => Translate::t('file.title', [], 'filefield'),
             'file' => false,
         ];
 
