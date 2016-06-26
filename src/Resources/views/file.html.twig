@@ -1,3 +1,11 @@
-{% if file %}
-    {{ include_file(file) }}
-{% endif %}
+{% extends template_path %}
+
+{% block field %}
+    {% if file %}
+        {{ include_file(file) }}
+    {% endif %}
+{% endblock %}
+
+{% block description %}
+    {{ description|raw }}
+{% endblock %}

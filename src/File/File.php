@@ -13,26 +13,21 @@ use GetOlympus\Hera\Translate\Controller\Translate;
  * @author Achraf Chouk <achrafchouk@gmail.com>
  * @since 0.0.1
  *
- * @see https://olympus.readme.io/v1.0/docs/include-field
+ * @see https://olympus.readme.io/v1.0/docs/file-field
  *
  */
 
 class File extends Field
 {
     /**
-     * @var string
+     * Prepare variables.
      */
-    protected $faIcon = 'fa-file-code-o';
-
-    /**
-     * @var boolean
-     */
-    protected $hasId = false;
-
-    /**
-     * @var string
-     */
-    protected $template = 'file.html.twig';
+    protected function setVars()
+    {
+        $this->getModel()->setFaIcon('fa-file-code-o');
+        $this->getModel()->setHasId(false);
+        $this->getModel()->setTemplate('file.html.twig');
+    }
 
     /**
      * Prepare HTML component.
@@ -54,6 +49,6 @@ class File extends Field
         $vars = array_merge($defaults, $content);
 
         // Update vars
-        $this->getField()->setVars($vars);
+        $this->getModel()->setVars($vars);
     }
 }
