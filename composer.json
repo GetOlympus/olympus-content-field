@@ -1,9 +1,9 @@
 {
-  "name": "getolympus/olympus-file-field",
+  "name": "getolympus/olympus-include-field",
   "type": "olympus-field",
-  "description": "[READ-ONLY] File field, this component is a part of the Olympus Zeus Core framework.",
-  "keywords": ["olympus", "zeus", "field", "file", "framework", "php"],
-  "homepage": "https://github.com/GetOlympus/olympus-file-field",
+  "description": "Include field, this component is a part of the Olympus Zeus Core framework.",
+  "keywords": ["olympus-zeus", "include", "field", "custom", "framework", "php", "wordpress"],
+  "homepage": "https://github.com/GetOlympus/olympus-include-field",
   "license": "MIT",
   "authors": [
     {
@@ -13,7 +13,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "GetOlympus\\Field\\": "src/File/"
+      "GetOlympus\\Field\\": "src/Include/"
     }
   },
   "extra": {
