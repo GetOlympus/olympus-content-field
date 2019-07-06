@@ -21,10 +21,10 @@ _Note that the `$identifier` (first `::build()` parameter) is completly useless 
 ```php
 return \GetOlympus\Field\Content::build('', [
     'title'   => 'The Dark Knight',
-    'content' => '',
-    'debug'   => false,
-    'file'    => 'im_the_batman.php',
-    'vars'    => [
+    'content' => '',                    // HTML contents to display. Can be used as a fallback if file doesn't exist
+    'debug'   => false,                 // Define if the debug mode should be enabled on file inclusion
+    'file'    => 'im_the_batman.php',   // File to include and display its contents
+    'vars'    => [                      // Variables to use in the included file
         'question' => 'Who\'s the Batman?',
         'answers'  => [
             'the-joker'    => 'The Joker',
