@@ -21,10 +21,10 @@ _Note that the `$identifier` (first `::build()` parameter) is completly useless 
 ```php
 return \GetOlympus\Field\Content::build('', [
     'title'   => 'The Dark Knight',
-    'content' => '',                    // HTML contents to display. Can be used as a fallback if file doesn't exist
-    'debug'   => false,                 // Define if the debug mode should be enabled on file inclusion
-    'file'    => 'im_the_batman.php',   // File to include and display its contents
-    'vars'    => [                      // Variables to use in the included file
+    'content' => '',
+    'debug'   => false,
+    'file'    => 'im_the_batman.php',
+    'vars'    => [
         'question' => 'Who\'s the Batman?',
         'answers'  => [
             'the-joker'    => 'The Joker',
@@ -36,13 +36,26 @@ return \GetOlympus\Field\Content::build('', [
 ]);
 ```
 
+## Variables definitions
+
+| Variable      | Type    | Default value if not set | Accepted values |
+| ------------- | ------- | ------------------------ | --------------- |
+| `title`       | String  | `'File contents'` | *empty* |
+| `content`     | String  | *empty* | *empty* |
+| `debug`       | Bookean | *empty* | *empty* |
+| `file`        | String  | `false` | `true` or `false` |
+| `vars`        | Array   | *empty* | *empty* |
+
+Notes:
+* Set `content` to display HTML tags. It can be used as a fallback if file doesn't exist
+* Set `debug` to `true` to enable the debug mode in case file inclusion fail
+* Set `file` to define the PHP file path to include as `include_once` PHP function
+
 ## Vars usage
 
 In the included file (`im_the_batman.php` in this example), you can use the `$v` variable as an array:
 
 ```php
-<?php
-
 // Display question
 echo '<h2>'.stripslashes($v['question']).'</h2>';
 echo '<ul>';
@@ -59,15 +72,15 @@ echo '</ul>';
 
 The component will display, by priority:
 
-1. included `file` content
-2. everything in `content` key
+1. included `file` path
+2. everything in `content`
 
-Note: set `debug` to `true` will display an error in the case the `file` does not exist or is not readable.
+Note: do not forget to set `debug` to `true` to display an error in the case the `file` does not exist or is not readable.
 
 ## Release History
 
 * 0.0.7
-    * ADD: add new version compatible with Zeus-Core latest version
+- [x] ADD: add new version compatible with Zeus-Core latest version
 
 ## Authors and Copyright
 
