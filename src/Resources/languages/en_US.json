@@ -1,5 +1,5 @@
 {
-    "include.title": "File include",
+    "content.title": "File contents",
 
-    "include.errors.does_not_exists_or_not_readable": "The specified file does not exists or is not readable."
+    "content.errors.does_not_exists_or_not_readable": "The specified file does not exists or is not readable."
 }

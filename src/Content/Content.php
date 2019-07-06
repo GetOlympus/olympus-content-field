@@ -6,28 +6,26 @@ use GetOlympus\Zeus\Field\Controller\Field;
 use GetOlympus\Zeus\Translate\Controller\Translate;
 
 /**
- * Builds Include field.
+ * Builds Content field.
  *
  * @package Field
- * @subpackage Include
+ * @subpackage Content
  * @author Achraf Chouk <achrafchouk@gmail.com>
  * @since 0.0.1
  *
- * @see https://olympus.readme.io/v1.0/docs/include-field
- *
  */
 
-class Include extends Field
+class Content extends Field
 {
     /**
      * @var string
      */
-    protected $template = 'include.html.twig';
+    protected $template = 'content.html.twig';
 
     /**
      * @var string
      */
-    protected $textdomain = 'includefield';
+    protected $textdomain = 'contentfield';
 
     /**
      * Prepare defaults.
@@ -37,11 +35,11 @@ class Include extends Field
     protected function getDefaults()
     {
         return [
-            'title' => Translate::t('include.title', $this->textdomain),
-            'data'  => '',
-            'debug' => false,
-            'file'  => false,
-            'vars'  => [],
+            'title'   => Translate::t('content.title', $this->textdomain),
+            'content' => '',
+            'debug'   => false,
+            'file'    => false,
+            'vars'    => [],
         ];
     }
 
@@ -61,10 +59,10 @@ class Include extends Field
         // Check file
         if ($vars['file'] && file_exists($vars['file']) && is_readable($vars['file'])) {
             $v = $vars['vars'];
-            $vars['data'] = include_once $vars['file'];
+            $vars['content'] = include_once $vars['file'];
             unset($v);
-        } else if (empty($vars['data']) && $vars['debug']) {
-            $vars['data'] = Translate::t('include.errors.does_not_exists_or_not_readable', $this->textdomain);
+        } else if ($vars['file'] && $vars['debug']) {
+            $vars['content'] = Translate::t('content.errors.does_not_exists_or_not_readable', $this->textdomain);
         }
 
         // Update vars
