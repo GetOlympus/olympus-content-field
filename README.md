@@ -83,14 +83,14 @@ Note: do not forget to set `debug` to `true` to display an error in the case the
 
 ## Release History
 
+* 0.0.10
+- [x] FIX: content raw display on twig file
+
 * 0.0.9
 - [x] FIX: remove twig dependency from composer
 
 * 0.0.8
 - [x] FIX: remove zeus-core dependency from composer
-
-* 0.0.7
-- [x] ADD: add new version compatible with Zeus-Core latest version
 
 ## Authors and Copyright
 
