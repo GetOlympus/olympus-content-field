@@ -1,4 +1,6 @@
-<img src="https://useiconic.com/open-iconic/svg/copywriting.svg" height="70">
+<p align="center">
+    <img src="https://img.icons8.com/nolan/2x/code.png">
+</p>
 
 # Content Field
 > This component is a part of the [**Olympus Zeus Core**][zeus-url] **WordPress** framework.
@@ -12,7 +14,7 @@
 Using `composer` in your PHP project:
 
 ```sh
-composer install getolympus/olympus-content-field
+composer require getolympus/olympus-content-field
 ```
 
 ## Field initialization
