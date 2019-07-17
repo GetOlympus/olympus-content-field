@@ -1,3 +1,5 @@
+<img src="https://useiconic.com/open-iconic/svg/copywriting.svg" height="70">
+
 # Content Field
 > This component is a part of the [**Olympus Zeus Core**][zeus-url] **WordPress** framework.
 
@@ -79,6 +81,12 @@ Note: do not forget to set `debug` to `true` to display an error in the case the
 
 ## Release History
 
+* 0.0.9
+- [x] FIX: remove twig dependency from composer
+
+* 0.0.8
+- [x] FIX: remove zeus-core dependency from composer
+
 * 0.0.7
 - [x] ADD: add new version compatible with Zeus-Core latest version
 
@@ -91,7 +99,7 @@ Please, read [LICENSE][license-blob] for more information.
 [![MIT][license-image]][license-url]
 
 [https://github.com/crewstyle](https://github.com/crewstyle)  
-[http://fr.linkedin.com/in/achrafchouk](http://fr.linkedin.com/in/achrafchouk)
+[https://fr.linkedin.com/in/achrafchouk](https://fr.linkedin.com/in/achrafchouk)
 
 ## Contributing
 
