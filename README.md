@@ -20,10 +20,10 @@ composer require getolympus/olympus-content-field
 ## Field initialization
 
 Use the following lines to add a `content field` in your **WordPress** admin pages or custom post type meta fields:  
-_Note that the `$identifier` (first `::build()` parameter) is completly useless here: no value stored in database._
+_Note that the `$identifier` (first `::build()` parameter) is set to `false` useless because no value is stored in database._
 
 ```php
-return \GetOlympus\Field\Content::build('', [
+return \GetOlympus\Field\Content::build(false, [
     'title'   => 'The Dark Knight',
     'content' => '',
     'debug'   => false,
