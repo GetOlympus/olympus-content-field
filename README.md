@@ -1,29 +1,25 @@
-<p align="center">
-    <img src="https://img.icons8.com/nolan/2x/view-details.png">
-</p>
-
-# Content Field
-> This component is a part of the [**Olympus Zeus Core**][zeus-url] **WordPress** framework.
+# Dionysos Content Field
+> This component is a part of the **Olympus Dionysos fields** for **WordPress**.
 
 [![Olympus Component][olympus-image]][olympus-url]
 [![CodeFactor Grade][codefactor-image]][codefactor-url]
 [![Packagist Version][packagist-image]][packagist-url]
 
-## Installation
-
-Using `composer` in your PHP project:
-
 ```sh
-composer require getolympus/olympus-content-field
+composer require getolympus/olympus-dionysos-field-content
 ```
+
+<p align="center">
+    <img src="https://github.com/GetOlympus/olympus-dionysos-field-content/blob/master/assets/field-content-64.png" />
+</p>
 
 ## Field initialization
 
-Use the following lines to add a `content field` in your **WordPress** admin pages or custom post type meta fields:  
-_Note that the `$identifier` (first `::build()` parameter) is set to `false` useless because no value is stored in database._
+Use the following lines to add a `content field` in your **WordPress** admin pages or custom post type's meta fields:  
+_Note the `$identifier` (first `::build()` parameter) is set to `false` because no value is stored in database._
 
 ```php
-return \GetOlympus\Field\Content::build(false, [
+return \GetOlympus\Dionysos\Field\Content::build(false, [
     'title'   => 'The Dark Knight',
     'content' => '',
     'debug'   => false,
@@ -83,14 +79,15 @@ Note: do not forget to set `debug` to `true` to display an error in the case the
 
 ## Release History
 
-* 0.0.10
-- [x] FIX: content raw display on twig file
+0.0.11
+- New Olympus components compatibility
+- Change repository to be a part of Dionysos fields
 
-* 0.0.9
-- [x] FIX: remove twig dependency from composer
+0.0.10
+- FIX: content raw display on twig file
 
-* 0.0.8
-- [x] FIX: remove zeus-core dependency from composer
+0.0.9
+- FIX: remove twig dependency from composer
 
 ## Authors and Copyright
 
@@ -105,7 +102,7 @@ Please, read [LICENSE][license-blob] for more information.
 
 ## Contributing
 
-1. Fork it (<https://github.com/GetOlympus/olympus-content-field/fork>)
+1. Fork it (<https://github.com/GetOlympus/olympus-dionysos-field-content/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
@@ -113,18 +110,17 @@ Please, read [LICENSE][license-blob] for more information.
 
 ---
 
-**Built with ♥ by [Achraf Chouk](http://github.com/crewstyle "Achraf Chouk") ~ (c) since a long time.**
+**Built with ♥ by [Achraf Chouk](https://github.com/crewstyle "Achraf Chouk") ~ (c) since a long time.**
 
 <!-- links & imgs dfn's -->
 [olympus-image]: https://img.shields.io/badge/for-Olympus-44cc11.svg?style=flat-square
 [olympus-url]: https://github.com/GetOlympus
-[zeus-url]: https://github.com/GetOlympus/Zeus-Core
-[codefactor-image]: https://www.codefactor.io/repository/github/GetOlympus/olympus-content-field/badge?style=flat-square
-[codefactor-url]: https://www.codefactor.io/repository/github/getolympus/olympus-content-field
-[license-blob]: https://github.com/GetOlympus/olympus-content-field/blob/master/LICENSE
+[codefactor-image]: https://www.codefactor.io/repository/github/GetOlympus/olympus-dionysos-field-content/badge?style=flat-square
+[codefactor-url]: https://www.codefactor.io/repository/github/getolympus/olympus-dionysos-field-content
+[license-blob]: https://github.com/GetOlympus/olympus-dionysos-field-content/blob/master/LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT_License-blue.svg?style=flat-square
 [license-url]: http://opensource.org/licenses/MIT
-[packagist-image]: https://img.shields.io/packagist/v/getolympus/olympus-content-field.svg?style=flat-square
-[packagist-url]: https://packagist.org/packages/getolympus/olympus-content-field
+[packagist-image]: https://img.shields.io/packagist/v/getolympus/olympus-dionysos-field-content.svg?style=flat-square
+[packagist-url]: https://packagist.org/packages/getolympus/olympus-dionysos-field-content
 [twitter-image]: https://img.shields.io/badge/crewstyle-blue.svg?style=social&logo=twitter
-[twitter-url]: http://twitter.com/crewstyle
+[twitter-url]: https://twitter.com/crewstyle
