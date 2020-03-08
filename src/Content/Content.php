@@ -1,17 +1,16 @@
 <?php
 
-namespace GetOlympus\Field;
+namespace GetOlympus\Dionysos\Field;
 
-use GetOlympus\Zeus\Field\Controller\Field;
-use GetOlympus\Zeus\Translate\Controller\Translate;
+use GetOlympus\Zeus\Field\Field;
 
 /**
  * Builds Content field.
  *
- * @package Field
+ * @package    DionysosField
  * @subpackage Content
- * @author Achraf Chouk <achrafchouk@gmail.com>
- * @since 0.0.1
+ * @author     Achraf Chouk <achrafchouk@gmail.com>
+ * @since      0.0.1
  *
  */
 
@@ -32,10 +31,10 @@ class Content extends Field
      *
      * @return array
      */
-    protected function getDefaults()
+    protected function getDefaults() : array
     {
         return [
-            'title'   => Translate::t('content.title', $this->textdomain),
+            'title'   => parent::t('content.title', $this->textdomain),
             'content' => '',
             'debug'   => false,
             'file'    => false,
@@ -51,7 +50,7 @@ class Content extends Field
      *
      * @return array
      */
-    protected function getVars($value, $contents)
+    protected function getVars($value, $contents) : array
     {
         // Get contents
         $vars = $contents;
@@ -62,7 +61,7 @@ class Content extends Field
             $vars['content'] = include_once $vars['file'];
             unset($v);
         } else if ($vars['file'] && $vars['debug']) {
-            $vars['content'] = Translate::t('content.errors.does_not_exists_or_not_readable', $this->textdomain);
+            $vars['content'] = parent::t('content.errors.does_not_exists_or_not_readable', $this->textdomain);
         }
 
         // Update vars
