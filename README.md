@@ -86,15 +86,15 @@ Note: do not forget to set `debug` to `true` to display an error in the case the
 
 ## Release History
 
+0.0.12
+- Remove useless description
+
 0.0.11
 - New Olympus components compatibility
 - Change repository to be a part of Dionysos fields
 
 0.0.10
 - FIX: content raw display on twig file
-
-0.0.9
-- FIX: remove twig dependency from composer
 
 ## Contributing
 
